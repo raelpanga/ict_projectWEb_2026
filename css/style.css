@@ -1,0 +1,31 @@
+
+body {
+    background-color: #f4f6f8;
+    color: #1a1a1a;
+    font-size: 1rem; 
+}
+
+
+h1 {
+    color: #0b5cab;
+}
+
+
+nav ul {
+    background-color: #e3ecf5;
+}
+
+
+nav a {
+    color: #0b5cab;
+}
+
+
+.highlight {
+    color: white;
+    background-color: #0b5cab;
+}
+
+#main-title {
+    color: #003366;
+}
