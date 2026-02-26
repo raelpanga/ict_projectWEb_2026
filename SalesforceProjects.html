@@ -42,7 +42,24 @@ Geno Formal Affair uses this org to manage customers, rentals, pricing, and disc
 •	Automation (Flows) Four Record Triggered Flows: (1) auto set rental status to Order Placed, (2) mark Past Due after rental duration, (3) update to Returned, (4) send overdue email reminders.<br>
 •	Approvals Two Approval Processes: (1) Rental Extension (>7 days) requiring Manager approval, (2) Wedding Discount (>15%) requiring Manager authorization and email alerts <br>
 •	Validation Rules Enforced date ordering, rental duration limits, and event pickup logic to prevent data corruption.<br>
-•	Security Model Role Hierarchy (CEO  Manager Sales  Marketing  Support). OWD: Account  Private; Rentals Controlled by Parent; Products  Read Only. Sharing Rules grant read access to Marketing and Customer Service</p>
+•	Security Model Role Hierarchy (CEO  Manager Sales  Marketing  Support). OWD: Account  Private; Rentals Controlled by Parent; Products  Read Only. Sharing Rules grant read access to Marketing and Customer Service <br>
+•	Profiles & Permissions Custom profiles for CEO, Manager, Sales, Marketing, and Customer Service. Used Permission Sets for targeted access to reports and admin features.</p>
+<h3>Business Impact</h3>
+<p>•	Automated 90% of rental lifecycle updates, reducing manual effort and errors.<br>
+•	Enabled cross team visibility through structured role and sharing rules.<br>
+•	Improved customer response time with automated emails and dashboard insights.<br>
+•	Provided actionable data for management to forecast rental volume and trends
+</p>
+<h3>Tools & Features Used</h3>
+<ul>
+        <li>	Salesforce Flows</li>
+        <li>Approval Processes</li>
+        <li> Validation Rules</li>
+        <li>Record Types</li>
+        <li> Reports & Dashboards</li>
+        <li> Field Level Security</li>
+    
+      </ul>
     </section>
 
     <section>
@@ -51,6 +68,7 @@ Geno Formal Affair uses this org to manage customers, rentals, pricing, and disc
             <p>I built record-triggered flows to automatically update the rental status to "Past Due" when the due date passed. I also created validation rules to prevent users from entering incorrect dates.</p>
 
             <p>This helped me understand how automation improves efficiency and reduces human error in business processes.</p>
+
     
     </section>
 
