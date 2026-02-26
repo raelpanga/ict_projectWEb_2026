@@ -24,9 +24,7 @@
         <header>
 
           <h2>Rental Business CRM Project</h2>   
-        
           
-
         </header>
         
      <section>
@@ -35,7 +33,16 @@
             <p>One of my main projects was building a rental business CRM system in Salesforce. I created custom objects to manage rentals, customers, and payments. This allowed me to simulate how a real business would track its operations.</p>
 
             <p>I configured relationships between objects to ensure that rental records were connected to customer accounts.</p>
-       
+            <p>Designed and configured a Salesforce Lightning org to manage the full rental lifecycle for suits, tuxedos, and wedding events. The goal was to automate manual processes, improve cross team collaboration, secure customer data, and enhance reporting visibility for management decisions.<br>
+Geno Formal Affair uses this org to manage customers, rentals, pricing, and discount approvals, while maintaining efficient communication between the Sales, Marketing, and Customer Service departments.
+</p>
+<h3>System Design & Configuration</h3>
+<h4>Category Key Deliverables</h4>
+<p>•	Data Model Custom object Rental linked to Account (Master–Detail) and Contact (Lookup). Separate record types for Suit Rentals and Tuxedo Rentals with unique page layouts. <br> 
+•	Automation (Flows) Four Record Triggered Flows: (1) auto set rental status to Order Placed, (2) mark Past Due after rental duration, (3) update to Returned, (4) send overdue email reminders.<br>
+•	Approvals Two Approval Processes: (1) Rental Extension (>7 days) requiring Manager approval, (2) Wedding Discount (>15%) requiring Manager authorization and email alerts <br>
+•	Validation Rules Enforced date ordering, rental duration limits, and event pickup logic to prevent data corruption.<br>
+•	Security Model Role Hierarchy (CEO  Manager Sales  Marketing  Support). OWD: Account  Private; Rentals Controlled by Parent; Products  Read Only. Sharing Rules grant read access to Marketing and Customer Service</p>
     </section>
 
     <section>
@@ -53,6 +60,27 @@
 
             <p>This project helped me move from basic configuration to thinking like a real Salesforce Administrator.</p>
         </section>
+
+         <section id="skills">
+  <h3>My Salesforce Skills</h3>
+  <ul>
+    <li>Creating Custom Objects</li>
+    <li>Building Flows & Automation</li>
+    <li>Validation Rules</li>
+    <li>Reports & Dashboards</li>
+    <li>User Roles & Profiles</li>
+  </ul>
+  <section>
+  <h2>Connect With Me</h2>
+  <p>
+    <a href="https://www.linkedin.com/in/rael-kapanga-574491249/" target="_blank">LinkedIn</a>
+
+  </p> 
+  <br>
+  <p><a href="https://github.com/raelpanga" target="_blank">github</a></p>
+</section>
+</section>
+          
 
 </article>
 
