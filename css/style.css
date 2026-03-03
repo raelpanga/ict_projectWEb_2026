@@ -1,29 +1,25 @@
-
+/* ====== YOUR ORIGINAL STYLES (kept exactly) ====== */
 body {
     background-color: #f4f7f8;
     color: #1a1a1a;
     font-size: 1rem; 
 }
 
-
 h1 {
-    
     color: #630bab;
 }
 
 h2 {
-    
     color: #630bab;
 }
+
 nav ul {
     background-color: #e9e3f5;
 }
 
-S
 nav a {
     color: #0b26ab;
 }
-
 
 .highlight {
     color: rgb(255, 255, 255);
@@ -33,75 +29,62 @@ nav a {
 #main-title {
     color: #003366;
 }
+
 h3 {
     color: #008bd1;            
     font-size: 1.5rem;         
 }
 
+/* ====== REQUIRED ASSIGNMENT STYLES BELOW ====== */
 
-
-
-/* ====== BASIC RESET ====== */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* ====== PAGE LAYOUT ====== */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f8f8f8;
-  padding: 1rem;
-}
-
-/* ====== MAIN: centered with margin auto ====== */
+/* Center main using margin: auto + width */
 main {
-  width: 80%;
-  margin: 2rem auto; /* requirement: margin + auto centering */
-  padding: 1.5rem;
-  border: 2px solid #ccc;
-  background: #fff;
+    width: 80%;
+    margin: 2rem auto;    /* requirement: auto centering + rem unit */
+    padding: 1.5rem;
+    border: 2px solid #ccc;
+    background: #ffffff;
 }
 
-/* ====== SECTION: box model styling ====== */
+/* Box model styling for section */
 section {
-  margin: 1.5rem 0;
-  padding: 1.2rem;
-  border: 1px solid #aaa;
-  background: #fafafa;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid #aaa;
+    background: #fefefe;
 }
 
-/* ====== PARAGRAPHS: box model styling ====== */
+/* Box model styling for p */
 p {
-  margin: 1rem 0;
-  padding: 0.5rem; /* using rem instead of px (requirement) */
-  border: 1px dotted #bbb;
+    margin: 1rem 0;
+    padding: 0.75rem;      /* using rem instead of px (required) */
+    border: 1px dotted #bbb;
 }
 
-/* ====== NESTED BOX DEMO (required) ====== */
+/* ====== Nested Box Demo (required) ====== */
+
 .box-parent {
-  width: 300px;
-  background: #e0e0ff;
-  padding: 1rem;
-  border: 2px solid #666;
-  margin: 2rem 0;
+    width: 300px;
+    background: #e0e0ff;
+    padding: 1rem;
+    border: 2px solid #666;
+    margin: 2rem 0;
 }
 
-/* Default behavior first (overflows without border-box) */
+/* Child WITHOUT border-box — will overflow */
 .box-child-default {
-  width: 100%;
-  padding: 1rem;
-  background: #c0c0ff;
-  border: 2px solid #444;
+    width: 100%;
+    padding: 1rem;
+    background: #c0c0ff;
+    border: 2px solid #444;
 }
 
-/* Fixed version using border-box */
+/* Child WITH border-box — properly fits */
 .box-child-borderbox {
-  width: 100%;
-  padding: 1rem;
-  background: #c0ffc0;
-  border: 2px solid #444;
-  box-sizing: border-box; /* requirement */
+    width: 100%;
+    padding: 1rem;
+    background: #c0ffc0;
+    border: 2px solid #444;
+    box-sizing: border-box;
 }
+
