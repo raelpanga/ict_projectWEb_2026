@@ -58,7 +58,7 @@ section {
 p {
     margin: 1rem 0;
     padding: 0.75rem;      /* using rem instead of px (required) */
-    border: 1px dotted #bbb;
+    border: 1px dotted #291a89;
 }
 
 /* ====== Nested Box Demo (required) ====== */
