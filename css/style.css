@@ -15,10 +15,17 @@ h2 {
 
 nav ul {
     background-color: #e9e3f5;
+    border: 2px solid rgb(0, 0, 0);
+    font-weight: 900;
+    margin: auto;
+
 }
 
 nav a {
     color: #0b26ab;
+    border: 2px solid black;
+    font-weight: 900;
+    margin: auto;
 }
 
 .highlight {
@@ -32,7 +39,8 @@ nav a {
 
 h3 {
     color: #008bd1;            
-    font-size: 1.5rem;         
+    font-size: 1.5rem;  
+
 }
 
 /* ====== REQUIRED ASSIGNMENT STYLES BELOW ====== */
@@ -42,8 +50,8 @@ main {
     width: 80%;
     margin: 2rem auto;    /* requirement: auto centering + rem unit */
     padding: 1.5rem;
-    border: 2px solid #ccc;
-    background: #ffffff;
+    border: 2px solid #03030300;
+    background: #18d5cf;
 }
 
 /* Box model styling for section */
@@ -58,7 +66,7 @@ section {
 p {
     margin: 1rem 0;
     padding: 0.75rem;      /* using rem instead of px (required) */
-    border: 1px dotted #291a89;
+    border: 1px dotted #2c2173;
 }
 
 /* ====== Nested Box Demo (required) ====== */
