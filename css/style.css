@@ -26,7 +26,7 @@ h2 {
 
 
 nav a {
-    color: #0b26ab;
+    color: #ececec;
     font-weight: 900;
     margin: auto;
 }
@@ -43,6 +43,7 @@ nav a {
 h3 {
     color: #008bd1;            
     font-size: 1.5rem;  
+    
 
 }
 
@@ -50,18 +51,18 @@ h3 {
 
 /* Center main using margin: auto + width */
 html {
-    width: 80%;
+    width: 90%;
     margin: 2rem auto;    /* requirement: auto centering + rem unit */
     padding: 1.5rem;
     border: 2px solid #03030300;
-    background: #074e66;
+    background: #8ed3ea;
 }
 
 /* Box model styling for section */
 section {
     margin: 1.5rem 0;
     padding: 1rem;
-    border: 1px solid #aaa;
+    border: 1px solid #000000;
     background: #fefefe;
     color: #084887;
 }
@@ -70,7 +71,7 @@ section {
 p {
     margin: 1rem 0;
     padding: 0.75rem;      /* using rem instead of px (required) */
-    border: 1px dotted #2c2173;
+    border: 1px dotted #000000;
 }
 
 /* ====== Nested Box Demo (required) ====== */
