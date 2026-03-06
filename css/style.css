@@ -20,9 +20,18 @@ nav ul {
     background-color: #dbe7f3;
     padding: 0.5rem;
 }
+p {
+    margin: 1rem 0;
+    padding: 0.75rem;      
+    border: 1px dotted #bbb;
+}
 
 nav a {
     color: #0b5cab;
+}
+h3 {
+    color: #008bd1;            
+    font-size: 1.5rem;
 }
 
 /* MAIN container (centered container requirement) */
@@ -30,15 +39,16 @@ html {
     width: 80%;
     margin: 2rem auto;
     padding: 1rem;
-    border: 2px solid #0b5cab;
+    border: 2px solid #000000;
+    background-color: aqua;
 }
 
 /* Section boxes */
 section {
-    width: 90%;
-    margin: 1.5rem auto;
+    margin: 1.5rem 0;
     padding: 1rem;
-    border: 1px solid #888;
+    border: 1px solid #aaa;
+    background: #90b3e3c6;
 }
 
 /* Paragraph boxes */
