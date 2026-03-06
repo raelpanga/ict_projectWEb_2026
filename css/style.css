@@ -1,9 +1,15 @@
 /* Base page styling */
 
 body {
-    background-color: #f4f6f8;
+    background-color: #a2c4cf;
     color: #1a1a1a;
-    font-size: 1rem;
+    font-size: 1rem; 
+}
+h1 {
+    color: #630bab;
+}
+h2 {
+    color: #630bab;
 }
 
 /* Header styling */
