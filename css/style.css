@@ -7,9 +7,13 @@ body {
 }
 h1 {
     color: #630bab;
+    border: 1px solid #000000;
+    background-color: #a97fcc;
 }
 h2 {
     color: #630bab;
+    border: 1px solid #000000;
+    background-color: #a97fcc;
 }
 
 /* Header styling */
@@ -17,9 +21,7 @@ header {
     background-color: #e3ecf5;
     padding: 1rem;
 }
-h3{
-    color: #0b5cab;
-}
+
 
 /* Navigation */
 nav ul {
@@ -36,8 +38,11 @@ nav a {
     color: #0b5cab;
 }
 h3 {
-    color: #008bd1;            
+    color: #630bab;;            
     font-size: 1.5rem;
+    border: 1px solid #000000;
+    background-color: #a97fcc;
+
 }
 
 /* MAIN container (centered container requirement) */
@@ -59,9 +64,10 @@ section {
 
 /* Paragraph boxes */
 p {
-    padding: 0.5rem;
+    padding: 1rem;
     margin: 1rem 0;
     border: 1px solid #ccc;
+    
 }
 
 /* Nested box example for box-sizing */
