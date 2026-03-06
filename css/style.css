@@ -36,6 +36,9 @@ p {
 
 nav a {
     color: #0b5cab;
+    border: 1px solid #000000;
+    background-color: #9abae6;
+
 }
 h3 {
     color: #630bab;;            
@@ -59,7 +62,7 @@ section {
     margin: 1.5rem 0;
     padding: 1rem;
     border: 1px solid #aaa;
-    background: #90b3e3c6;
+    background:#9abae6 ;
 }
 
 /* Paragraph boxes */
