@@ -1,7 +1,5 @@
 /* Base page styling */
-* {
-  border: 1px solid black;
-}
+
 body {
     background-color: #f4f6f8;
     color: #1a1a1a;
@@ -12,6 +10,9 @@ body {
 header {
     background-color: #e3ecf5;
     padding: 1rem;
+}
+h3{
+    color: #0b5cab;
 }
 
 /* Navigation */
