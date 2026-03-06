@@ -7,11 +7,15 @@ body {
 
 h1 {
     color: #630bab;
+    background-color: #e9e3f5;
+    border: 2px solid rgb(0, 0, 0);
+    font-weight: 900;
+    margin: auto;
 
 }
 
 h2 {
-    color: #630bab;
+    color: #001fcc;
     background-color: #e9e3f5;
     border: 2px solid rgb(0, 0, 0);
     font-weight: 900;
