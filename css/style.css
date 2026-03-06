@@ -25,7 +25,7 @@ header {
 
 /* Navigation */
 nav ul {
-    background-color: #dbe7f3;
+    background-color: #2b639a;
     padding: 0.5rem;
 }
 p {
@@ -35,9 +35,8 @@ p {
 }
 
 nav a {
-    color: #0b5cab;
-    border: 1px solid #000000;
-    background-color: #9abae6;
+    color: #4b87c4;
+    background-color: #414c5c;
 
 }
 h3 {
