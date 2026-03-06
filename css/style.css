@@ -1,80 +1,191 @@
-/* Base page styling */
+/* =============================================
+   style.css — Box Model Assignment
+   Author: Rael Kapanga
+   ============================================= */
+
+/* --- Reset & Base --- */
+* {
+  box-sizing: border-box; /* D: border-box on everything — padding and border
+                              are now included in the element's total width,
+                              so nothing unexpectedly overflows */
+}
 
 body {
-    background-color: #ffffff;
-    color: #1a1a1a;
-    font-size: 1rem; 
-}
-h1 {
-    color: #630bab;
-    border: 1px solid #000000;
-    background-color: #a97fcc;
-}
-h2 {
-    color: #630bab;
-    border: 1px solid #000000;
-    background-color: #a97fcc;
+  font-family: Georgia, serif;
+  font-size: 16px;          /* base for rem calculations */
+  background-color: #f4f4f4;
+  color: #222;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header styling */
+/* =============================================
+   B: Style the main layout boxes
+   ============================================= */
+
+/* --- Header / hero section --- */
 header {
-    background-color: #0079f1;
-    padding: 1rem;
+  background-color: #0070d2;  /* Salesforce blue */
+  color: #fff;
+  padding: 2rem 1.5rem;       /* rem: scales with user font-size preference */
+  border-bottom: 4px solid #005fb2;
 }
 
+header h1 {
+  margin: 0 0 0.5rem 0;       /* top right bottom left shorthand */
+  font-size: 2rem;
+}
 
-/* Navigation */
+header p {
+  margin: 0.5rem 0 1rem 0;
+  line-height: 1.6;
+}
+
+/* --- Navigation --- */
 nav ul {
-    background-color: #2b639a;
-    padding: 0.5rem;
-}
-p {
-    margin: 1rem 0;
-    padding: 0.75rem;      
-    border: 1px dotted #000000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
 }
 
-nav a {
-    color: #4b87c4;
-
-}
-h3 {
-    color: #630bab;;            
-    font-size: 1.5rem;
-    border: 1px solid #000000;
-    background-color: #a97fcc;
-
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 4px;
 }
 
-/* MAIN container (centered container requirement) */
-html {
-    width: 90%;
-    margin: 1rem auto;
-    padding: 1rem;
-    border: 2px solid #000000;
-    background-color: rgb(238, 248, 248);
+nav ul li a:hover {
+  background-color: rgba(255,255,255,0.2);
 }
 
-/* Section boxes */
+/* =============================================
+   C: Center the main content container
+   margin: auto centering
+   ============================================= */
+main,
+body > section:not(:first-child),  /* targets the content sections */
+article {
+  width: 90%;
+  max-width: 800px;
+  margin: 2rem auto;   /* top/bottom: 2rem | left/right: auto → centers the box */
+}
+
+/* --- Section boxes (B requirement) --- */
 section {
-    margin: 1.5rem 0;
-    border: 1px solid #000000;
-    background:#9abae6 ;
+  background-color: #fff;
+  padding: 1.5rem 2rem;       /* inner breathing room (padding, not margin) */
+  margin-bottom: 1.5rem;      /* space OUTSIDE the box — separates sections */
+  border: 1px solid #dde;     /* visible boundary of the section box */
+  border-radius: 6px;
 }
 
-
-    
-/* Nested box example for box-sizing */
-.box-parent {
-    width: 60%;
-    margin: 2rem auto;
-    padding: 1rem;
-    border: 2px solid #333;
+/* --- Paragraphs (B requirement) --- */
+p {
+  margin: 0.75rem 0;          /* vertical rhythm between paragraphs */
+  padding: 0;                 /* paragraphs don't need inner padding */
+  line-height: 1.7;
+  max-width: 65ch;            /* readable line length */
 }
 
-.box-child {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid red;
-    box-sizing: border-box;
+/* --- Article wrapper --- */
+article {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+/* --- Headings --- */
+h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #0070d2;
+  padding-bottom: 0.4rem;
+}
+
+h3 {
+  margin: 1.25rem 0 0.5rem 0;
+  font-size: 1.15rem;
+}
+
+/* --- Lists --- */
+ul {
+  padding-left: 1.5rem;       /* indent the bullets using padding */
+  margin: 0.75rem 0;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+/* --- Image --- */
+picture img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border: 2px solid #ccc;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+/* =============================================
+   D: Nested box — box-sizing: border-box demo
+   Shows why border-box matters when a child
+   is width: 100% with padding.
+   ============================================= */
+
+.box-demo {
+  background-color: #e8f0fe;
+  border: 3px solid #0070d2;
+  padding: 1rem;
+  width: 90%;
+  max-width: 600px;
+  margin: 1.5rem auto;
+  border-radius: 6px;
+}
+
+.box-demo p.label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #005fb2;
+  margin: 0 0 0.5rem 0;
+}
+
+/* Child with box-sizing: border-box
+   width: 100% + padding stays inside the parent.
+   Without border-box it would overflow by 2 × 1.5rem. */
+.inner-box {
+  box-sizing: border-box;     /* D: key rule — padding is included in the 100% width */
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border: 2px dashed #0070d2;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* =============================================
+   Footer
+   ============================================= */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  background-color: #222;
+  color: #eee;
+  border-top: 4px solid #0070d2;
+}
+
+footer h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+footer a {
+  color: #7ec8e3;
+  margin: 0 0.5rem;
 }
