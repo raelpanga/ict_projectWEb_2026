@@ -7,10 +7,15 @@ body {
 
 h1 {
     color: #630bab;
+
 }
 
 h2 {
     color: #630bab;
+    background-color: #e9e3f5;
+    border: 2px solid rgb(0, 0, 0);
+    font-weight: 900;
+    margin: auto;
 }
 
 nav ul {
@@ -60,6 +65,7 @@ section {
     padding: 1rem;
     border: 1px solid #aaa;
     background: #fefefe;
+    color: #084887;
 }
 
 /* Box model styling for p */
