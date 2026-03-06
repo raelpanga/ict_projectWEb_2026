@@ -1,6 +1,6 @@
 /* ====== YOUR ORIGINAL STYLES (kept exactly) ====== */
 body {
-    background-color: #f4f7f8;
+    background-color: #892ccc;
     color: #1a1a1a;
     font-size: 1rem; 
 }
@@ -27,7 +27,6 @@ h2 {
 
 nav a {
     color: #0b26ab;
-    border: 2px solid black;
     font-weight: 900;
     margin: auto;
 }
@@ -50,7 +49,7 @@ h3 {
 /* ====== REQUIRED ASSIGNMENT STYLES BELOW ====== */
 
 /* Center main using margin: auto + width */
-main {
+html {
     width: 80%;
     margin: 2rem auto;    /* requirement: auto centering + rem unit */
     padding: 1.5rem;
