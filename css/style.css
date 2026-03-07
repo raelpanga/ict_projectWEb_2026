@@ -1,119 +1,190 @@
 
-* {
-  box-sizing: border-box; 
+html {
+  font-size: 100%;      
+  box-sizing: border-box;
 }
 
 body {
-  font-family: Georgia, serif;
-  font-size: 16px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.6;
   background-color: #f4f4f4;
-  color: #222;
+  color: #1a1a1a;
   margin: 0;
   padding: 0;
 }
 
 
+h1, h2, h3, h4 {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #111;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.25rem;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-bottom: 2px solid #0070d2;
+  padding-bottom: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  line-height: 1.7;
+  max-width: 65ch;
+  text-align: left;
+}
+
+strong {
+  font-weight: 700;
+  color: #111;
+}
+
+em {
+  font-style: italic;
+}
+
+cite {
+  font-style: italic;
+  color: #444;
+}
 
 
+/* =============================================
+   6. LINKS
+   ============================================= */
+a {
+  color: #0070d2;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover, a:focus {
+  color: #004e99;
+  text-decoration-thickness: 2px;
+}
+
+/* =============================================
+   7. NAVIGATION
+   ============================================= */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0.3rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 4px;
+}
+
+nav a:hover, nav a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* =============================================
+   8. LAYOUT
+   ============================================= */
 header {
   background-color: #0070d2;
   color: #fff;
-  padding: 2rem 1.5rem;       
+  padding: 2rem 1.5rem 1.5rem;
   border-bottom: 4px solid #005fb2;
 }
 
 header h1 {
-  margin: 0 0 0.5rem 0;   
-  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 0.6rem;
 }
 
 header p {
-  margin: 0.5rem 0 1rem 0;
-  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  line-height: 1.5;
+  max-width: 55ch;
+  color: rgba(255, 255, 255, 0.92);
 }
 
-/* --- Navigation --- */
-nav ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 1rem;
-}
-
-nav ul li a {
-  color: #fff;
-  padding: 0.3rem 0.6rem;
-  border: 1px solid rgba(255,255,255,0.4);
-  border-radius: 4px;
-}
-
-nav ul li a:hover {
-  background-color: rgba(255,255,255,0.2);
-}
-
-main,
-body > section:not(:first-child),  
-article {
+main {
   width: 90%;
   max-width: 800px;
-  margin: 2rem auto;  
+  margin: 2rem auto;
 }
-
-
-section {
-  background-color: #fff;
-  padding: 1.5rem 2rem;     
-  margin-bottom: 1.5rem;      
-  border: 1px solid #dde;     
-  border-radius: 6px;
-}
-
-p {
-  margin: 0.75rem 0;      
-  padding: 0;              
-  line-height: 1.7;
-  max-width: 65ch;         
-}
-
 
 article {
-  background-color: transparent;
   border: none;
   padding: 0;
 }
 
-
-h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #0070d2;
-  padding-bottom: 0.4rem;
+section {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #dde;
+  border-radius: 6px;
 }
 
-h3 {
-  margin: 1.25rem 0 0.5rem 0;
-  font-size: 1.15rem;
-}
-
-
-ul {
-  padding-left: 1.5rem;   
-  margin: 0.75rem 0;
+/* =============================================
+   9. LISTS
+   ============================================= */
+ul, ol {
+  padding-left: 1.5rem;
+  margin: 0.75rem 0 1rem;
 }
 
 li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.45rem;
+  line-height: 1.6;
 }
+
+/* =============================================
+   10. IMAGE
+   ============================================= */
 picture img {
   display: block;
   max-width: 100%;
-  margin: 1rem auto;
+  margin: 1.25rem auto;
   border: 2px solid #ccc;
   padding: 4px;
   border-radius: 4px;
 }
 
 
+/* =============================================
+   11. BOX-SIZING DEMO (from previous assignment)
+   ============================================= */
 .box-demo {
   background-color: #e8f0fe;
   border: 3px solid #0070d2;
@@ -125,40 +196,60 @@ picture img {
 }
 
 .box-demo p.label {
-  font-size: 0.85rem;
-  font-weight: bold;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
   color: #005fb2;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.6rem 0;
 }
 
-
 .inner-box {
-  box-sizing: border-box;     
+  box-sizing: border-box;
   width: 100%;
   padding: 1rem 1.5rem;
   background-color: #fff;
   border: 2px dashed #0070d2;
   border-radius: 4px;
   font-size: 0.9rem;
+  line-height: 1.5;
   color: #333;
 }
 
-
+/* =============================================
+   12. FOOTER
+   ============================================= */
 footer {
   text-align: center;
   padding: 1.5rem;
   margin-top: 2rem;
-  background-color: #222;
+  background-color: #1a1a1a;
   color: #eee;
   border-top: 4px solid #0070d2;
 }
 
 footer h4 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1rem;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #aaa;
+  margin-bottom: 0.5rem;
+}
+
+footer p {
+  margin: 0;
+  max-width: none;
 }
 
 footer a {
   color: #7ec8e3;
   margin: 0 0.5rem;
+  text-decoration-color: transparent;
+}
+
+footer a:hover {
+  text-decoration-color: #7ec8e3;
 }
