@@ -36,6 +36,9 @@
             <p>Designed and configured a Salesforce Lightning org to manage the full rental lifecycle for suits, tuxedos, and wedding events. The goal was to automate manual processes, improve cross team collaboration, secure customer data, and enhance reporting visibility for management decisions.<br>
 Geno Formal Affair uses this org to manage customers, rentals, pricing, and discount approvals, while maintaining efficient communication between the Sales, Marketing, and Customer Service departments.
 </p>
+</section>
+
+<section>
 <h3>System Design & Configuration</h3>
 <h4>Category Key Deliverables</h4>
 <p> <strong>Data Model</strong> Custom object Rental linked to Account (Master–Detail) and Contact (Lookup). Separate record types for Suit Rentals and Tuxedo Rentals with unique page layouts. <br> 
@@ -44,12 +47,20 @@ Geno Formal Affair uses this org to manage customers, rentals, pricing, and disc
 •	<strong>Validation Rules</strong> Enforced date ordering, rental duration limits, and event pickup logic to prevent data corruption.<br>
 •	<strong>Model Role Hierarchy</strong> (CEO  Manager Sales  Marketing  Support). OWD: Account  Private; Rentals Controlled by Parent; Products  Read Only. Sharing Rules grant read access to Marketing and Customer Service <br>
 •	<strong>Profiles & Permissions</strong>  Custom profiles for CEO, Manager, Sales, Marketing, and Customer Service. Used Permission Sets for targeted access to reports and admin features.</p>
+
+</section>
+<section>
 <h3>Business Impact</h3>
+
+
 <p>•	Automated 90% of rental lifecycle updates, reducing manual effort and errors.<br>
 •	Enabled cross team visibility through structured role and sharing rules.<br>
 •	Improved customer response time with automated emails and dashboard insights.<br>
 •	Provided actionable data for management to forecast rental volume and trends
 </p>
+</section>
+
+<section>
 <h3>Tools & Features Used</h3>
 <ul>
         <li>	Salesforce Flows</li>
@@ -89,8 +100,8 @@ Geno Formal Affair uses this org to manage customers, rentals, pricing, and disc
     <li>Reports & Dashboards</li>
     <li>User Roles & Profiles</li>
   </ul>
-  <section>
-    <section> 
+</section>
+<section>
       <h2>Preview of Rental Custom object</h2>
       <h3>Rental Details </h3>
       <picture>
@@ -107,9 +118,6 @@ Geno Formal Affair uses this org to manage customers, rentals, pricing, and disc
     </picture>
 
     </section>
-  
-</section>
-</section>
           
 
 </article>
