@@ -1,4 +1,3 @@
-
 html {
   font-size: 100%;      
   box-sizing: border-box;
@@ -20,7 +19,7 @@ h1, h2, h3, h4 {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   line-height: 1.25;
-  color: #111;
+  color: #2b5da8;
   margin: 0;
 }
 
