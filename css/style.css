@@ -177,40 +177,6 @@ picture img {
 }
 
 
-/* =============================================
-   11. BOX-SIZING DEMO (from previous assignment)
-   ============================================= */
-.box-demo {
-  background-color: #e8f0fe;
-  border: 3px solid #0070d2;
-  padding: 1rem;
-  width: 90%;
-  max-width: 600px;
-  margin: 1.5rem auto;
-  border-radius: 6px;
-}
-
-.box-demo p.label {
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #005fb2;
-  margin: 0 0 0.6rem 0;
-}
-
-.inner-box {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 1rem 1.5rem;
-  background-color: #fff;
-  border: 2px dashed #0070d2;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  line-height: 1.5;
-  color: #333;
-}
 
 /* =============================================
    12. FOOTER
@@ -234,10 +200,6 @@ footer h4 {
   margin-bottom: 0.5rem;
 }
 
-footer p {
-  margin: 0;
-  max-width: none;
-}
 
 footer a {
   color: #7ec8e3;
