@@ -16,8 +16,9 @@ h1, h2, h3, h4 {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   line-height: 1.25;
-  color: #2b5da8;
+  color: #e7e7e7;
   margin: 0;
+  border: 2px solid #000000;
 }
 
 h1 {
@@ -73,7 +74,7 @@ cite {
    6. LINKS
    ============================================= */
 a {
-  color: #0070d2;
+  color: #f1f6fa;
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
@@ -141,10 +142,10 @@ html {
 
 
 section {
-  background-color: #005fb2;
+  background-color: #c3d2de;
   padding: 1.5rem 2rem;
   margin-bottom: 1.5rem;
-  border: 1px solid #dde;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 6px;
 }
 
