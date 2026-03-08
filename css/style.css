@@ -6,7 +6,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   background-color: #f4f4f4;
-  color: #1a1a1a;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -16,9 +16,10 @@ h1, h2, h3, h4 {
   font-family: "Helvetica Neue", Arial, sans-serif;
   font-weight: 700;
   line-height: 1.25;
-  color: #e7e7e7;
+  color: #fffefe;
   margin: 0;
-  border: 2px solid #000000;
+  border: 2px solid #0070d2;
+  background-color: #0070d2;
 }
 
 h1 {
