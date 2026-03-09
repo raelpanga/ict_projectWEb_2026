@@ -60,20 +60,14 @@ h4 {
 
 strong { 
     font-weight: 700; 
-    color: #111; }
+    color: #640974; }
 
 em { 
     font-style: italic;
     color: #1404a3f3;
  }
 
-i { 
-    font-style: italic; 
-}
-
-cite { 
-    font-style: italic; color: #444;
- }
+ 
 
 /* LINKS */
  a {
