@@ -1,8 +1,12 @@
 html { 
     font-size: 100%;
     font-family: Georgia, "Times New Roman", serif;
-
-     }
+     width: 80%; 
+    margin: 2rem auto;
+    padding: 1.5rem; 
+    background: #ffffff; 
+    border-radius: 6px; 
+    }
 
 body { 
     line-height: 1.6;
@@ -12,7 +16,6 @@ body {
     padding: 0;
      }
 
-/* HEADINGS — using second allowed family */
  h1, h2, h3, h4 { 
 
     font-family: "Helvetica Neue", Arial, sans-serif; 
@@ -42,7 +45,7 @@ h4 {
     font-size: 1rem; 
 }
 
-/* PARAGRAPHS */
+
  p { 
       margin: 0 0 1rem 0;
       line-height: 1.6;
@@ -50,7 +53,7 @@ h4 {
       text-align: left; 
     }
 
-/* EMPHASIS */ 
+
 strong { 
     font-weight: 700; 
     color: #111; }
@@ -109,15 +112,6 @@ nav a:hover {
     border-bottom: 4px solid #005fb2; 
     }
 
-/* LAYOUT — center main */
- html {
-    width: 80%; 
-    margin: 2rem auto;
-    padding: 1.5rem; 
-    background: #ffffff; 
-    border: 1px solid #ccc;
-    border-radius: 6px; 
-    }
 
 /* SECTIONS */ 
 section { 
@@ -178,7 +172,7 @@ footer a:hover {
     text-decoration-color: #7ec8e3;
  }
 
-/* REQUIRED: Nested box model demo */
+
  .nested-parent { 
     width: 80%;
     background: #e7eef3;
@@ -192,6 +186,6 @@ footer a:hover {
     background: #fff;
     border: 2px solid #999; 
     margin-top: 1rem;
-     /* Uncomment each step when demonstrating / / Without box sizing, child overflows / / box-sizing: border-box; <-- Add this to fix overflow */ }
 
-/* CODE BLOCKS (third font family allowed) */ code, pre { font-family: "Courier New", Courier, monospace; background: #eee; padding: 0.3rem 0.5rem; border-radius: 4px; }
+}
+
