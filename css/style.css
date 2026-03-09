@@ -1,15 +1,15 @@
 html { 
     font-size: 100%;
-     font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, "Times New Roman", serif;
 
      }
 
 body { 
     line-height: 1.6;
-     background-color: #f4f4f4; 
-     color: #222; 
-     margin: 0 auto;
-      padding: 0;
+    background-color: #f4f4f4; 
+    color: #222; 
+    margin: 0 auto;
+    padding: 0;
      }
 
 /* HEADINGS — using second allowed family */
@@ -26,7 +26,7 @@ body {
      }
 
 h1 { 
-    font-size: 2rem;
+     font-size: 2rem;
      text-transform: uppercase;
      }
 
@@ -43,8 +43,8 @@ h4 { font-size: 1rem;
 
 /* PARAGRAPHS */
  p { 
-    margin: 0 0 1rem 0;
-     line-height: 1.6;
+      margin: 0 0 1rem 0;
+      line-height: 1.6;
       max-width: 65ch; 
       text-align: left; 
     }
@@ -69,7 +69,7 @@ cite {
 /* LINKS */
  a {
      color: #004e99; 
-    text-decoration: underline;
+     text-decoration: underline;
      text-underline-offset: 2px;
      }
 
@@ -78,34 +78,118 @@ a:hover {
  }
 
 /* NAVIGATION */ 
-nav ul { padding: 0; margin: 1rem 0 0 0; display: flex; gap: 1rem; flex-wrap: wrap; }
+nav ul { 
+     padding: 0;
+     margin: 1rem 0 0 0; 
+     display: flex; gap: 1rem;
+     flex-wrap: wrap; 
+    }
 
-nav a { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 0.9rem; font-weight: 600; color: #fff; padding: 0.3rem 0.65rem; border-radius: 4px; background-color: #0070d2; }
 
-nav a:hover { background-color: #005fb2; }
+nav a {
+     font-family: "Helvetica Neue", Arial, sans-serif; 
+     font-size: 0.9rem; 
+     font-weight: 600; 
+     color: #fff;
+     padding: 0.3rem 0.65rem;
+     border-radius: 4px;
+    background-color: #0070d2; }
 
-/* HEADER */ header { background-color: #0070d2; color: #fff; padding: 2rem 1.5rem; border-bottom: 4px solid #005fb2; }
+nav a:hover { 
+    background-color: #005fb2;
+ }
 
-/* LAYOUT — center main */ main { width: 80%; margin: 2rem auto; padding: 1.5rem; background: #ffffff; border: 1px solid #ccc; border-radius: 6px; }
+/* HEADER */
+ header { 
+    background-color: #0070d2; 
+    color: #fff; 
+    padding: 2rem 1.5rem;
+    border-bottom: 4px solid #005fb2; 
+    }
 
-/* SECTIONS */ section { background-color: #c3d2de; padding: 1.5rem 2rem; margin-bottom: 1.5rem; border: 1px solid #000; border-radius: 6px; }
+/* LAYOUT — center main */
+ main {
+    width: 80%; 
+    margin: 2rem auto;
+    padding: 1.5rem; 
+    background: #ffffff; 
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+    }
 
-/* LISTS */ ul, ol { padding-left: 1.5rem; margin: 0.75rem 0 1rem; }
+/* SECTIONS */ 
+section { 
+    background-color: #c3d2de; 
+    padding: 1.5rem 2rem; 
+    margin-bottom: 1.5rem;
+    border: 1px solid #000;
+    border-radius: 6px; 
+    }
 
-li { margin-bottom: 0.45rem; line-height: 1.6; }
+/* LISTS */
+ ul, ol { 
+     padding-left: 1.5rem;
+     margin: 0.75rem 0 1rem; 
+}
 
-/* IMAGES */ picture img { display: block; max-width: 100%; margin: 1.25rem auto; border: 2px solid #ccc; padding: 4px; border-radius: 4px; }
+li { 
+     margin-bottom: 0.45rem;
+     line-height: 1.6; 
+}
 
-/* FOOTER */ footer { text-align: center; padding: 1.5rem; margin-top: 2rem; background-color: #1a1a1a; color: #eee; border-top: 4px solid #0070d2; }
+/* IMAGES */ 
+picture img { 
+     display: block;
+     max-width: 100%;
+     margin: 1.25rem auto;
+     border: 2px solid #ccc;
+     padding: 4px;
+     border-radius: 4px;
+    
+ }
 
-footer h4 { font-family: "Helvetica Neue", Arial, sans-serif; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: #7ec8e3; }
+/* FOOTER */
+ footer {
+     text-align: center; 
+     padding: 1.5rem;
+     margin-top: 2rem; 
+     background-color: #1a1a1a; 
+     color: #eee;
+     border-top: 4px solid #0070d2; 
+    }
 
-/* FOOTER LINKS */ footer a { color: #7ec8e3; text-decoration-color: transparent; }
+footer h4 { 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.85rem; 
+    text-transform: uppercase; 
+    letter-spacing: 0.08em;
+    color: #7ec8e3;
+     }
 
-footer a:hover { text-decoration-color: #7ec8e3; }
+/* FOOTER LINKS */ 
+footer a { 
+    color: #7ec8e3; 
+    text-decoration-color: transparent; 
+}
 
-/* REQUIRED: Nested box model demo */ .nested-parent { width: 80%; background: #e7eef3; padding: 1rem; margin: 2rem auto; border: 2px solid #0070d2; }
+footer a:hover { 
+    text-decoration-color: #7ec8e3;
+ }
 
-.nested-child { width: 100%; padding: 1rem; background: #fff; border: 2px solid #999; margin-top: 1rem; /* Uncomment each step when demonstrating / / Without box sizing, child overflows / / box-sizing: border-box; <-- Add this to fix overflow */ }
+/* REQUIRED: Nested box model demo */
+ .nested-parent { 
+    width: 80%;
+    background: #e7eef3;
+    padding: 1rem;
+    margin: 2rem auto;
+    border: 2px solid #0070d2; }
+
+.nested-child {
+    width: 100%;
+    padding: 1rem;
+    background: #fff;
+    border: 2px solid #999; 
+    margin-top: 1rem;
+     /* Uncomment each step when demonstrating / / Without box sizing, child overflows / / box-sizing: border-box; <-- Add this to fix overflow */ }
 
 /* CODE BLOCKS (third font family allowed) */ code, pre { font-family: "Courier New", Courier, monospace; background: #eee; padding: 0.3rem 0.5rem; border-radius: 4px; }
