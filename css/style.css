@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #ffffff;
-  margin: 0;
+  margin: auto;
   padding: 0;
 }
 
@@ -136,7 +136,7 @@ header p {
 
 html {
   width: 90%;
-  max-width: 800px;
+ 
   margin: 2rem auto;
 }
 
@@ -195,7 +195,7 @@ footer h4 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #aaa;
+  color:#7ec8e3;
   margin-bottom: 0.5rem;
 }
 
