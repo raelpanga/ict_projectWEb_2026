@@ -23,7 +23,7 @@ body {
     line-height: 1.25;
     color: #ffffff; 
     margin: 0 0 1rem 0; 
-    background-color: #0070d2;
+    
      border: 2px solid #0070d2; 
      padding: 0.5rem 0.75rem;
      }
@@ -31,18 +31,22 @@ body {
 h1 { 
      font-size: 2rem;
      text-transform: uppercase;
+     background-color: #8a4880;
      }
 
 h2 { 
     font-size: 1.5rem;
+    background-color: #004e99;
  }
 
 h3 { 
     font-size: 1.2rem;
+    background-color: #3b268d;
  }
 
 h4 { 
     font-size: 1rem; 
+    background-color: #005fb2;
 }
 
 
