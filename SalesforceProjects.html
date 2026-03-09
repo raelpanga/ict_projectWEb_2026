@@ -39,8 +39,8 @@ Geno Formal Affair uses this org to manage customers, rentals, pricing, and disc
 </section>
 
 <section>
-<h3>System Design & Configuration</h3>
-<h4>Category Key Deliverables</h4>
+<h2>System Design & Configuration</h2>
+<h3>Category Key Deliverables</h3>
 <p> <strong>Data Model</strong> Custom object Rental linked to Account (Master–Detail) and Contact (Lookup). Separate record types for Suit Rentals and Tuxedo Rentals with unique page layouts. <br> 
 •	<strong>Flows</strong>  Four Record Triggered Flows: (1) auto set rental status to Order Placed, (2) mark Past Due after rental duration, (3) update to Returned, (4) send overdue email reminders.<br>
 •<strong>Approval</strong> Two Approval Processes: (1) Rental Extension (>7 days) requiring Manager approval, (2) Wedding Discount (>15%) requiring Manager authorization and email alerts <br>
