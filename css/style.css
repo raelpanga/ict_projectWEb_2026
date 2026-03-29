@@ -121,6 +121,7 @@ section {
     border-radius: 6px; 
     }
 
+
 /* LISTS */
  ul, ol { 
      padding-left: 1.5rem;
@@ -188,3 +189,24 @@ footer a:hover {
 
 }
 
+/* FLEXBOX LAYOUT */
+.layout {
+    display: flex;
+    flex-wrap: wrap; /* makes it responsive */
+    gap: 1rem;
+}
+
+/* Main content (left side) */
+.main-content {
+    flex: 2;
+    min-width: 300px;
+}
+
+/* Sidebar (right side) */
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #f0f4f8;
+}
