@@ -2,7 +2,6 @@
    GLOBAL STYLES
    ========================================================= */
 
-@import url('[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap)');
 
 html { 
     font-size: 100%;
@@ -216,8 +215,10 @@ footer a:hover {
 
 .layout {
     display: flex;
-    flex-wrap: wrap; /* makes it responsive */
+    flex-wrap: wrap;
     gap: 1rem;
+    justify-content: space-between;  
+    align-items: flex-start;         
 }
 
 /* Main content (left side) */
