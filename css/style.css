@@ -1,85 +1,102 @@
+/* =========================================================
+   GLOBAL STYLES
+   ========================================================= */
+
+@import url('[fonts.googleapis.com](https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap)');
+
 html { 
     font-size: 100%;
-    font-family: Georgia, "Times New Roman", serif;
-     width: 90%; 
+    font-family: 'Open Sans', Georgia, "Times New Roman", serif;
+    width: 90%; 
     margin: 2rem auto;
     padding: 1.5rem; 
     background: #ffffff; 
     border-radius: 6px; 
-    }
+}
 
 body { 
     line-height: 1.6;
-    background-color: #f4f4f4; 
+    background-color: #ffffff; 
     color: #222; 
     margin: 0 auto;
     padding: 0;
-     }
+}
 
- h1, h2, h3, h4 { 
+/* =========================================================
+   HEADINGS
+   ========================================================= */
 
+h1, h2, h3, h4 { 
     font-family: "Helvetica Neue", Arial, sans-serif; 
     font-weight: 700;
     line-height: 1.25;
     color: #ffffff; 
     margin: 0 0 1rem 0; 
-    
-     border: 2px solid #0070d2; 
-     padding: 0.5rem 0.75rem;
-     }
+    border: 2px solid #0070d2; 
+    padding: 0.5rem 0.75rem;
+}
 
 h1 { 
-     font-size: 2rem;
-     text-transform: uppercase;
-     background-color: #8a4880;
-     border: #62355b;
-     }
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #8a4880;
+    border: 2px solid #62355b;
+}
 
 h2 { 
     font-size: 1.5rem;
     background-color: #004e99;
- }
+}
 
 h3 { 
     font-size: 1.2rem;
     background-color: #3b268d;
- }
+}
 
 h4 { 
     font-size: 1rem; 
     background-color: #005fb2;
 }
 
- p { 
-      margin: 0 0 1rem 0;
-      line-height: 1.6;
-      max-width: 65ch; 
-      text-align: left; 
-    }
+/* =========================================================
+   TEXT & LINKS
+   ========================================================= */
+
+p { 
+    margin: 0 0 1rem 0;
+    line-height: 1.6;
+    max-width: 65ch; 
+    text-align: left; 
+}
 
 strong { 
     font-weight: 700; 
-    color: #640974; }
+    color: #640974; 
+}
 
 em { 
     font-style: italic;
-    color: #7900fa;
- }
-
- 
+    color: #302937;
+}
 
 /* LINKS */
- a {
-     color: #004e99; 
-     text-decoration: underline;
-     text-underline-offset: 2px;
-     }
+
+a {
+    
+color: #002f60;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
 
 a:hover { 
     color: #002f60;
- }
+}
 
-/* NAVIGATION */ 
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
 nav ul { 
      padding: 0;
      margin: 1rem 0 0 0; 
@@ -98,7 +115,7 @@ nav a {
 
 nav a:hover { 
     background-color: #005fb2;
- }
+}
 
 /* HEADER */
  header { 
@@ -115,7 +132,7 @@ section {
     margin-bottom: 1.5rem;
     border: 1px solid #000;
     border-radius: 6px; 
-    }
+}
 
 /* LISTS */
  ul, ol { 
@@ -124,30 +141,35 @@ section {
 }
 
 li { 
-     margin-bottom: 0.45rem;
-     line-height: 1.6; 
+    margin-bottom: 0.45rem;
+    line-height: 1.6; 
 }
 
-/* IMAGES */ 
-picture img { 
-     display: block;
-     max-width: 100%;
-     margin: 1.25rem auto;
-     border: 2px solid #ccc;
-     padding: 4px;
-     border-radius: 4px;
-    
- }
+/* =========================================================
+   IMAGES
+   ========================================================= */
 
-/* FOOTER */
- footer {
-     text-align: center; 
-     padding: 1.5rem;
-     margin-top: 2rem; 
-     background-color: #1a1a1a; 
-     color: #eee;
-     border-top: 4px solid #0070d2; 
-    }
+picture img { 
+    display: block;
+    max-width: 100%;
+    margin: 1.25rem auto;
+    border: 2px solid #ccc;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer {
+    text-align: center; 
+    padding: 1.5rem;
+    margin-top: 2rem; 
+    background-color: #1a1a1a; 
+    color: #eee;
+    border-top: 4px solid #0070d2; 
+}
 
 footer h4 { 
     font-family: "Helvetica Neue", Arial, sans-serif;
@@ -155,7 +177,7 @@ footer h4 {
     text-transform: uppercase; 
     letter-spacing: 0.08em;
     color: #7ec8e3;
-     }
+}
 
 /* FOOTER LINKS */ 
 footer a { 
@@ -165,14 +187,19 @@ footer a {
 
 footer a:hover { 
     text-decoration-color: #7ec8e3;
- }
+}
 
- .nested-parent { 
+/* =========================================================
+   NESTED ELEMENTS
+   ========================================================= */
+
+.nested-parent { 
     width: 80%;
     background: #e7eef3;
     padding: 1rem;
     margin: 2rem auto;
-    border: 2px solid #0070d2; }
+    border: 2px solid #0070d2; 
+}
 
 .nested-child {
     width: 100%;
@@ -183,7 +210,10 @@ footer a:hover {
 
 }
 
-/* FLEXBOX LAYOUT */
+/* =========================================================
+   FLEXBOX LAYOUT (Responsive)
+   ========================================================= */
+
 .layout {
     display: flex;
     flex-wrap: wrap; /* makes it responsive */
