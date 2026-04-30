@@ -75,7 +75,6 @@ strong {
 
 em { 
     font-style: italic;
-    color: #ffffff;
 }
 
 /* LINKS */
@@ -181,7 +180,7 @@ footer h4 {
     font-size: 0.85rem; 
     text-transform: uppercase; 
     letter-spacing: 0.08em;
-    color: #7ec8e3;
+    color: #053343;
 }
 
 /* FOOTER LINKS */ 
